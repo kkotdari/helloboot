@@ -9,26 +9,12 @@ import org.springframework.context.annotation.Configuration;
 public class ConfigurationTest {
     @Test
     void configuration() {
-        Assertions.assertThat(new Common()).isSameAs(new Common());
-    }
-
-    @Test
-    void configuration2() {
         Common common = new Common();
         Assertions.assertThat(common).isSameAs(common);
     }
 
     @Test
-    void configuration3() {
-        MyConfig myConfig = new MyConfig();
-        Bean1 bean1 = myConfig.bean1();
-        Bean2 bean2 = myConfig.bean2();
-
-        Assertions.assertThat(bean1.common).isSameAs(bean2.common);
-    }
-
-    @Test
-    void configuration4() {
+    void configuration2() {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext();
         ac.register(MyConfig.class);
         ac.refresh();

@@ -1,6 +1,0 @@
-kkot.config.autoconfig.DataSourceConfig
-kkot.config.autoconfig.PropertyPostProcessorConfig
-kkot.config.autoconfig.PropertyPlaceholderConfig
-kkot.config.autoconfig.TomcatWebServerConfig
-kkot.config.autoconfig.JettyWebServerConfig
-kkot.config.autoconfig.DispatcherServletConfig

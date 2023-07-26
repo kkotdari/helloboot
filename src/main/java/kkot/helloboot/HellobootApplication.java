@@ -1,17 +1,17 @@
 package kkot.helloboot;
 
-import kkot.config.MySpringBootApplication;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.annotation.PostConstruct;
 
-@MySpringBootApplication
-public class HelloBootApplication {
+@SpringBootApplication
+public class HellobootApplication {
 
     private final JdbcTemplate jdbcTemplate;
 
-    public HelloBootApplication(JdbcTemplate jdbcTemplate) {
+    public HellobootApplication(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
@@ -21,7 +21,7 @@ public class HelloBootApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloBootApplication.class, args);
+        SpringApplication.run(HellobootApplication.class, args);
     }
 
 }
